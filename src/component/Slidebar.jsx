@@ -29,7 +29,7 @@ const Slidbar = () => {
                     data?.map((item, index) => {
                         return (
                             <li key={index} className='side-menu'>
-                                <a href="#" className='nav-link cat-item '>
+                                <a  className='nav-link cat-item '>
                                     {item}
                                 </a>
                             </li>

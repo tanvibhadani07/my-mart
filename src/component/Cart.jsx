@@ -1,12 +1,12 @@
 import React from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
 
 const Cart = () => {
 
     const orders = useSelector((state) => state.cart)
     console.log(orders)
 
-    const dispatch = useDispatch()
+   
 
     return (
         <div className='container'>
