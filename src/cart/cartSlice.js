@@ -18,8 +18,8 @@ export const cartSlice = createSlice({
 
       state.amount = 0
 
-      state.cartData?.map((item) => {
-        state.amount += Math.round(item?.price)
+      state.cartData.forEach((item) => {
+        state.amount += Math.round(item.price)
       })
 
       state.c_gst_9 = state.amount * 9 / 100

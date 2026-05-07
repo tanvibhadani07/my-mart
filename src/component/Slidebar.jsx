@@ -29,9 +29,9 @@ const Slidbar = () => {
                     data?.map((item, index) => {
                         return (
                             <li key={index} className='side-menu'>
-                                <a  className='nav-link cat-item '>
+                                <button className='nav-link cat-item border-0 bg-transparent'>
                                     {item}
-                                </a>
+                                </button>
                             </li>
                         )
                     })
