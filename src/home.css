@@ -18,18 +18,22 @@
     text-transform: capitalize !important;
     padding: 10px !important;
 }
+
 .btn-light-green {
     background-color: #23BB75 !important;
     color: white !important;
 }
-.btn-green{
+
+.btn-green {
     background-color: #038D63 !important;
     color: white !important;
 }
-.btn-yellow{
+
+.btn-yellow {
     background-color: rgb(233, 189, 44) !important;
     color: white !important;
 }
+
 .main-sidebar {
     /* height: calc(100vh - 56px); */
     overflow-y: scroll;
@@ -54,11 +58,23 @@
     object-fit: contain;
     width: 100%;
 }
+
 .product-container {
-  margin-left: 220px;
-  padding-top: 80px;
-  height: calc(100vh - 80px);
-  overflow-y: auto;
+    margin-left: 220px;
+    padding-top: 80px;
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+}
+
+.hion {
+    font-size: 30px;
+    transition: 1s
+}
+
+.hion:hover {
+    filter: blur(2px);
+    transition: 1s;
+  
 }
 
 .body {

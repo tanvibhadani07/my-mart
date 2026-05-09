@@ -3,6 +3,7 @@ import { BsCart3 } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useSelector } from 'react-redux';
+import { RiBlueskyFill } from "react-icons/ri";
 
 
 
@@ -17,35 +18,31 @@ const Header = () => {
             <nav className="navbar  navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
 
                 <div className="container  container-fluid">
-                    <p className="navbar-brand fw-bold" > MY MART</p>
+                    <Link to='/' className="navbar-brand fw-bold" ><RiBlueskyFill className='hion' /> MY MART</Link >
 
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
 
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li className="nav-item">
                                 <Link className="nav-link active" aria-current="page" to="/">Home</Link>
                             </li>
                             <li className="nav-item position-relative">
 
-                                <Link
-                                    to="cart"
-                                    className="nav-link active d-flex align-items-center gap-1"
-                                    aria-current="page"
-                                >
-                                    Cart <BsCart3 size={20} />
-                                </Link>
 
-                                {cartData?.length > 0 && (
-                                    <span
-                                        className="position-absolute badge rounded-pill bg-danger"  style={{  top: "0px",   right: "-10px"
-                                        }}
-                                    >
-                                        {cartData.length}
-                                    </span>
-                                )}
+                                <Link to="/cart" className="nav-link active position-relative"  style={{ display: "inline-flex", alignItems: "center",  gap: "2px"  }}  >
+                                    Cart <BsCart3 size={17} />
+                                    {
+                                        cartData?.length > 0 && (
+                                            <span  className="position-absolute badge rounded-pill bg-danger" style={{  top: "-0px", right: "-11px", fontSize: "11px"  }}>
+                                                {cartData.length}
+                                            </span>
+                                        )
+                                    }
+
+                                </Link>
 
                             </li>
                         </ul>

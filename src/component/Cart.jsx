@@ -11,14 +11,14 @@ const Cart = () => {
     return (
         <div className='container'>
             <div className='text-center'>
-                <table className="table table-success table-striped">
+                <table className="table table-danger table-striped">
                     <thead>
                         <tr>
-                            <th>No.</th>
-                            <th>Image</th>
-                            <th>Title</th>
-                            <th>Qty</th>
-                            <th>Amount</th>
+                            <th scope='col'>No.</th>
+                            <th scope='col'>Image</th>
+                            <th scope='col'>Title</th>
+                            <th scope='col'>Qty</th>
+                            <th scope='col'>Amount</th>
                         </tr>
                     </thead>
                     <tbody>
