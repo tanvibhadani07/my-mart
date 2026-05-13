@@ -6,7 +6,7 @@ const Cart = () => {
     const orders = useSelector((state) => state.cart)
     console.log(orders)
 
-   
+
 
     return (
         <div className='container'>

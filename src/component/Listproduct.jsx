@@ -46,17 +46,16 @@ const List = () => {
 
     return (
 
-        <><div className='main-content container-fluid'>
-
-            <h3>All Products</h3>
-
-            <div className="row ">
+        <>
+        <div className="container">
+            <h1>Products</h1>
+            <div className="row">
                 {
                     data?.map((item, index) => {
                         return <div key={index} className='col-lg-4 col-md-6 col-12 p-2'>
                             <div className='card p-2 h-100'>
                                 <div>
-                                    <img src={item?.thumbnail} className='img-fluid img-intro' alt="" />
+                                    <img src={item?.thumbnail} className='img-fluid' alt="" />
                                 </div>
                                 <div className='card-body d-flex flex-column justify-content-between '>
                                     <div className='row'>
@@ -82,9 +81,8 @@ const List = () => {
                         </div>
                     })
                 }
-
             </div>
-        </div>
+        </div >
         </>
     );
 };
